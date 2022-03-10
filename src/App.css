@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
 .App {
   text-align: center;
 }
