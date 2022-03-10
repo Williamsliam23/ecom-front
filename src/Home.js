@@ -58,18 +58,30 @@ function Home() {
       </label> */}
 
       <h5>Rating</h5>
-      {/* <label> 
-        <input name='price' type="checkbox" />
-        $0 - $10  
+      <label> 
+        <input name='star' type="checkbox" />
+        1 &#x2605;
       </label>
       <label>  
-        <input name='price' type="checkbox" />
-        $10 - $20 
+        <input name='star' type="checkbox" />
+        2 &#x2605;
       </label>
       <label> 
-        <input name='price' type="checkbox" />
-        $20+
-      </label> */}
+        <input name='star' type="checkbox" />
+        3 &#x2605;
+      </label>
+      <label> 
+        <input name='star' type="checkbox" />
+        4 &#x2605;
+      </label>
+      <label> 
+        <input name='star' type="checkbox" />
+        5 &#x2605;
+      </label>
+      <label> 
+        <input name='star' type="checkbox" />
+        No Reviews
+      </label>
 
       <h5>Color</h5>
       {/* <label> 

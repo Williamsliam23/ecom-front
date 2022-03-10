@@ -48,6 +48,12 @@
   cursor: pointer;
 }
 
+.open-modal:hover{
+  transition: 0.5s;
+  background-color: #aaa;
+  cursor: pointer;
+}
+
 .partition1{
   padding-right: 50px;
 }
@@ -70,8 +76,13 @@
 a{
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .filter-header{
   padding-bottom: 10px;
+}
+
+input{
+  padding-right: 3px;
 }

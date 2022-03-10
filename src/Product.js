@@ -10,6 +10,7 @@ function Product (props) {
   function closeInfo(){
     document.getElementById(`${props.id}`).style.display = "none"
   }
+  
 
   function colorOption(){
     if(props.color.length > 0){
@@ -24,21 +25,27 @@ function Product (props) {
     }
   }
 
+  function ratingExists(){
+    if(props.rating === null){
+      return <>&#x2605;</>
+    }
+  }
+
   return (
     <>
     <div className='product-index'>
       <img src={props.image}></img>
       <p><strong>{props.name}</strong></p>
       <p>${props.price}</p>
-      <p>Rating: {props.rating}</p>
-      <button onClick={moreInfo}>view more</button>
+      <p>Rating: {props.rating}{ratingExists}</p>
+      <span className='open-modal' onClick={moreInfo}>+View More</span>
     </div>
     <div id={props.id} className='modal'>
       <div className='modal-content'>
         <span className="close" onClick={closeInfo}>&times;</span>
         <div className='partition1'>
           <img src={props.image} alt={props.name}></img>
-          <p>Rated <strong>{props.rating}</strong> stars!</p>
+          <p>Rated <strong>{props.rating}</strong> &#x2605;</p>
         </div>
         <div className='partition2'>
           <h4 className='product-name'>{props.name}</h4>
